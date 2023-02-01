@@ -1,1 +1,1 @@
-lab1- basics of HTML & CSS
+lab1 - basics of HTML & CSS
