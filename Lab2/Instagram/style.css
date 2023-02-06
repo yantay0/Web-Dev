@@ -2,7 +2,6 @@
     margin:0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
-    /* font-size: 16px; */
 }
 body {
     background-color: #fafafa;
@@ -11,27 +10,18 @@ body {
     
     margin: 20px 0px 0px;
     padding: 0px 0px 32px;
-    /* font-size: 16px; */
 }
 
 #first_main{
     display: inline;
-    /* z-index: 3; */
     justify-content: center;
     width: 100%;
     height: 70%;
 }
-#second_main{
-    width: 100%;
-    /* background-color: red; */
-    height: 157px;
-}
 
 .photos{
     position: absolute;
-    /* margin-left: 290px; */
-    left:280px;
-    /* margin-right: 900px; */
+    left:260px;
 }
 
 #inner_pic{
@@ -46,17 +36,19 @@ body {
     display: grid;
     position: absolute;
     top:17px;
-    right: 265px;
+    right: 280px;
     width:340px;
-    height: 500px;
+    height: 650px;
     margin-top: 12px 0px 0px;  
     border-radius: 1.5px;
     padding: 10px 0px;
 }
 
-/* #logo{
-    padding-left:50px;
-} */
+#logo{
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin:0px;
+}
 
 #login_form{
     display:grid;
@@ -64,23 +56,23 @@ body {
     align-items: center;
     width: 100%;
     border: 1.3px solid #DBDBDB;
-    height: 73%;
+    height: 51%;
+    /* margin-top: 10px; */
     background-color: white;
     /* padding-bottom: 30px; */
     font-size: 16px;
     /* margin-bottom: 110px; */
+    padding-bottom: 10px;
     
 }
+
 
 input[type=text], input[type=password]{
     width: 258px;
     height: 35px;
     margin: 3px;
-    /* text-align: center; */
     padding-left: 6px;
     border: 1.3px solid #DBDBDB;
-    /* font-size: 11px; */
-    /* color:#DBDBDB; */
     border-radius: 2px;
 }
 
@@ -105,14 +97,17 @@ button[type=submit]{
 button[type=submit]:hover{
     background-color: #0095f6;
 }
+
 form{
-    margin-bottom: 15px;
-    /* background-color: #fafafa; */
+    /* margin-top: 10px; */
+    margin-top:30px;
+    /* margin-bottom:20px; */
+    /* height: 30%; */
 }
 
 
 #logo{
-    margin-top: 14px;
+    margin-top: 10px;
     margin-left: 45px;
 }
 #variant_or{
@@ -120,7 +115,7 @@ form{
     display: flex;
     align-items: center;
     color:#96999e;
-    font-size: 18px;
+    font-size: 17px;
     /* font-weight: bold; */
 }
 
@@ -139,22 +134,85 @@ span{
     justify-content: center;
     align-items: center;
     color:#385185;
-    margin-top: 23px;
+    margin-top: 18px;
     cursor: pointer;
 }
 #logFa{
+    color:#385185;
     font-size: 14px;
     font-weight: bold;
+    text-decoration: none;
 }
 .icon{
     margin-left: 7px;
     font-size: 18px;
+    margin-right: 7px;
 }
 #forgot{
-    margin-top: 16px;
+    margin-top: 13px;
     justify-content: center;
     text-align: center;
     font-size: 12px;
     color:#385185;
     cursor: pointer;
+}
+
+#newAcc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1.3px solid #DBDBDB;
+    /* height: 80%; */
+    height: 8%;
+    top:381px;
+    position: absolute;
+    background-color: white;
+    font-size: 14px;
+    color:#262626;
+}
+#signUp{
+    margin-left: 3px;
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: bold;
+}
+
+ #app{
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    /* border: 1.3px solid #DBDBDB; */
+    /* height: 80%; */
+    height: 7%;
+    top:450px;
+    background-color: white;
+    font-size: 14px;
+    color:#262626;
+}
+.imgGet{
+    padding: 2px;
+    cursor: pointer;
+} 
+
+footer{
+    position: relative;
+    top:630px;
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+    color:#8e8e8e;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+
+}
+
+li{
+    display: inline;
+    cursor: pointer;
+    padding: 4px;
 }
