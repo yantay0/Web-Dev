@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    /* font-size: 16px; */
+}
+body {
+    background-color: #fafafa;
+    }
+.item_first{
+    
+    margin: 20px 0px 0px;
+    padding: 0px 0px 32px;
+    /* font-size: 16px; */
+}
+
+#first_main{
+    display: inline;
+    /* z-index: 3; */
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+#second_main{
+    width: 100%;
+    /* background-color: red; */
+    height: 157px;
+}
+
+.photos{
+    position: absolute;
+    /* margin-left: 290px; */
+    left:280px;
+    /* margin-right: 900px; */
+}
+
+#inner_pic{
+    position: absolute;
+    top: 67px;
+    left:133px;
+
+} 
+
+
+#login_box{
+    display: grid;
+    position: absolute;
+    top:17px;
+    right: 265px;
+    width:340px;
+    height: 500px;
+    margin-top: 12px 0px 0px;  
+    border-radius: 1.5px;
+    padding: 10px 0px;
+}
+
+/* #logo{
+    padding-left:50px;
+} */
+
+#login_form{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1.3px solid #DBDBDB;
+    height: 73%;
+    background-color: white;
+    /* padding-bottom: 30px; */
+    font-size: 16px;
+    /* margin-bottom: 110px; */
+    
+}
+
+input[type=text], input[type=password]{
+    width: 258px;
+    height: 35px;
+    margin: 3px;
+    /* text-align: center; */
+    padding-left: 6px;
+    border: 1.3px solid #DBDBDB;
+    /* font-size: 11px; */
+    /* color:#DBDBDB; */
+    border-radius: 2px;
+}
+
+input:focus{
+    outline: none;
+    /* color:black; */
+}
+
+
+button[type=submit]{
+    width: 265px;
+    height: 32px;
+    margin-top:12px;
+    margin-left: 3px;
+    border: none;
+    background-color: #b2dffc;
+    color:white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button[type=submit]:hover{
+    background-color: #0095f6;
+}
+form{
+    margin-bottom: 15px;
+    /* background-color: #fafafa; */
+}
+
+
+#logo{
+    margin-top: 14px;
+    margin-left: 45px;
+}
+#variant_or{
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    color:#96999e;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.line_or{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    border-bottom: 1px solid #dddfe2;
+    width: 50%;
+}
+span{
+    margin-left: 7px;
+}
+#linkFa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#385185;
+    margin-top: 23px;
+    cursor: pointer;
+}
+#logFa{
+    font-size: 14px;
+    font-weight: bold;
+}
+.icon{
+    margin-left: 7px;
+    font-size: 18px;
+}
+#forgot{
+    margin-top: 16px;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color:#385185;
+    cursor: pointer;
+}
