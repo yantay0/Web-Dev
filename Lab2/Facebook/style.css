@@ -175,22 +175,18 @@ li:hover{
 }
 .list2{
     margin: 0.5em;
-    /* padding-left: 4px; */
 }
 
 
 #line_lists{
     position: relative;
-    /* top:5px; */
     left: 5px;
-    /* right: 25px; */
     height: 10px;
     width:850px;
     display: flex;
     border-bottom: 1px solid #dddfe2
 }
 #copy{
-    /* position: absolute; */
     top: 5px;
     bottom: 5px;
     position: relative;

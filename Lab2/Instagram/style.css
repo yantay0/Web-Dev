@@ -57,11 +57,8 @@ body {
     width: 100%;
     border: 1.3px solid #DBDBDB;
     height: 51%;
-    /* margin-top: 10px; */
     background-color: white;
-    /* padding-bottom: 30px; */
     font-size: 16px;
-    /* margin-bottom: 110px; */
     padding-bottom: 10px;
     
 }
@@ -78,7 +75,6 @@ input[type=text], input[type=password]{
 
 input:focus{
     outline: none;
-    /* color:black; */
 }
 
 
@@ -99,10 +95,7 @@ button[type=submit]:hover{
 }
 
 form{
-    /* margin-top: 10px; */
     margin-top:30px;
-    /* margin-bottom:20px; */
-    /* height: 30%; */
 }
 
 
@@ -183,8 +176,6 @@ span{
     position: absolute;
     text-align: center;
     width: 100%;
-    /* border: 1.3px solid #DBDBDB; */
-    /* height: 80%; */
     height: 7%;
     top:450px;
     background-color: white;

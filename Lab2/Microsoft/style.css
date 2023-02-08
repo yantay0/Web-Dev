@@ -15,15 +15,10 @@ nav{
     color:#262626;
     height: 54px;
     width: 100%;
-    /* padding-left: 10px; */
     margin-left:10px;
     margin-right: 10px;
 }
 
-#main{
-    width: 100%;
-    /* background-image: url(""); */
-}
 h1{
     position: absolute;
     left:100px;
@@ -33,7 +28,6 @@ h1{
     position: absolute;
     left:100px;
     top:260px;
-    /* bottom: 320px; */
 }
 #nav_list1{
     width: 605px;
@@ -108,17 +102,12 @@ footer{
     align-items: center;
   }
 .card{
-    /* background-color: #262626; */
-    /* border:2px solid red; */
     margin: 12px;
-    /* padding: 12px; */
-    /* width: 400px; */
     height: 367px;
     text-align: left;
 }
 h2{
     font-size: 16px;
-    /* padding-left:15px; */
     margin-top: 20px;
     margin-bottom: 6px;
 }
