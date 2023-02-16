@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let styles = ["Jazz", "Bluse"];
+        styles.push("Rock");
+        styles[Math.floor((styles.length - 1) / 2)] = "Classic";
+        alert( styles.shift() );
+        styles.unshift("Rap", "Reggy");
+    </script>
+
+    <script>
+        function sumInput() {
+            let numbers = [];
+
+            while(true) {
+
+                let value = prompt("Input num", 0);
+
+                if (value === "" || value === null || !isFinite(value)) break;
+
+                numbers.push(+value);
+            }
+             let sum = 0;
+
+             for(let num of numbers) {
+                sum += num;
+             }
+             return sum;
+        }
+
+        alert( sumInput);
+    </script>
+
+    <script>
+        function getMaxSubSum(arr) {
+            let maxSum = 0;
+            let partSum = 0;
+
+            for(let item of arr) {
+                partSum += item;
+                maxSum = Math.max(maxSum, partSum);
+                if(partSum < 0) partSum = 0;
+            }
+            
+            return maxSum;
+        }
+
+        alert( getMaxSubSum([-1, -2, -3]) );
+    </script>
+</body>
+</html>
