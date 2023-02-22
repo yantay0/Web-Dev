@@ -1,0 +1,15 @@
+
+
+div {
+  padding: 10px 100px 10px 30px;
+}
+img {
+  width:100px;
+}
+
+.rating {
+  font-weight: bold;
+}
+.price {
+  font-size: 16px;
+}
