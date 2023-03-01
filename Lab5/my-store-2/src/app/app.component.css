@@ -1,0 +1,28 @@
+.content {
+  font-size: 1.4rem;
+  min-width: 450px;
+  width: 100%;
+  margin: 10px;
+}
+.category {
+    display: inline-flex;
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    border: 1px solid #e5e5e5;
+    margin: 10px 0px;
+    text-align: center;
+}
+.category:hover {
+  background: #1976d2;
+}
+.categories {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: -20px;
+}
+
+
+

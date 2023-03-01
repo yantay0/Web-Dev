@@ -1,0 +1,26 @@
+.container-items {
+
+  width: 100%;
+  background: #1976d2;
+}
+span {
+  border-right: red;
+}
+/*.item {*/
+/*  width: 500px;*/
+/*  padding: 10px;*/
+/*  !*margin: 30px;*!*/
+/*  margin-left: 30px;*/
+/*  !*border: 2px solid red;*!*/
+/*}*/
+
+img {
+  width:100px;
+}
+
+.rating {
+  font-weight: bold;
+}
+.price {
+  font-size: 16px;
+}

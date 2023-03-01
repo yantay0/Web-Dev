@@ -1,0 +1,41 @@
+<div class="items">
+<span class="item" *ngFor="let product of products">
+<!--  <div  *ngIf="product.category=='Clothing'">-->
+  <h3>
+    <a href="{{ product.link }}">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p class="price"*ngIf="product.price">
+    Price: {{ product.price }}
+  </p>
+
+  <p class="price"*ngIf="product.category">
+    Category: {{ product.category }}
+  </p>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <p *ngIf="product.image">
+    <img src="{{ product.image}}">
+  </p>
+
+  <p class="rating" *ngIf="product.rating">
+    Rating: {{ product.rating }}
+  </p>
+
+
+  <button type="button" (click)="share(product)">
+    Share
+  </button>
+  <app-product-alerts>
+    [product]="product"
+    (notify)="onNotify()">
+  </app-product-alerts>
+  </span>
+<!--</div>-->
+</div>
+
