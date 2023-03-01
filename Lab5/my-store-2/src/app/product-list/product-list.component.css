@@ -1,4 +1,5 @@
 .products {
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -23,8 +24,9 @@ img {
 .image {
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  /*width: 200px;*/
+  /*height: 200px;*/
+  width: 50%;
 }
 .buttons {
   width: 100%;

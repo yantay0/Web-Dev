@@ -1,14 +1,34 @@
 <app-top-bar></app-top-bar>
 
-<nav class="container categories">
-  <div class="container content">
-    <ul class="list">
-      <li class="category">All Categories</li>
-      <li class="category" *ngFor="let category of categories">
-              {{category}}
-            </li>
-    </ul>
-  </div>
+<!--<nav class="container categories">-->
+<!--  <div class="container content">-->
+<!--    <ul class="list">-->
+<!--      <li class="category">All Categories</li>-->
+<!--      <li class="category" *ngFor="let category of categories">-->
+<!--              {{category}}-->
+<!--            </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</nav>-->
+
+
+<nav class="categories-menu">
+  <ul class="menu-list">
+    <div class="category">
+    <li class="menu-item">
+      All Categories
+      <ul class="submenu">
+        <div *ngFor="let category of categories">
+        <li>{{category}}</li></div>
+      </ul>
+    </li>
+    </div>
+    <div class="category" *ngFor=" let category of categories">
+      <li>
+        {{category}}
+      </li>
+    </div>
+  </ul>
 </nav>
 
 
