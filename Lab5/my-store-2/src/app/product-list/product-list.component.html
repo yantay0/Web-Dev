@@ -24,6 +24,7 @@
         [product]="product"
         (notify)="onNotify()">
       </app-product-alerts>
+      <button class="like" (click)="increaseNumberOfLikes(product.id)">Like {{product.numberOfLikes}}</button>
     </div>
   </div>
 </div>

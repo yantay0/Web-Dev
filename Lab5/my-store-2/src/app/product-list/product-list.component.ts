@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 
-import {Product, products as allProducts} from '../products';
+import {Product, products, products as allProducts} from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -28,9 +28,15 @@ export class ProductListComponent implements OnInit{
     const telegramUrl = (`https://t.me/share/url?url=${message}`);
     window.open(telegramUrl);
   }
-
   onNotify() {
     window.alert('You will be notified when the product goes on sale')
+  }
+
+  increaseNumberOfLikes(id: number) {
+    let x = allProducts.find((x) => x.id == id);
+    if(x) {
+      x.numberOfLikes++;
+    }
   }
 
 }
