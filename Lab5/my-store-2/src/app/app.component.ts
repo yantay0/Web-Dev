@@ -1,5 +1,5 @@
 import {Component, OnInit, Output} from '@angular/core';
-import {products} from "./products";
+import {Product, products} from "./products";
 
 @Component({
   selector: 'app-root',
@@ -13,6 +13,7 @@ export class AppComponent implements OnInit{
   statusCategoryClicked = false;
   title = 'my-store';
 
+  cart: Product[] = [];
   setCategory(category: string): void{
     this._category = category;
     console.log(this._category)
@@ -26,6 +27,10 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     console.log(this._category)
+  }
+
+  addToCart(product: Product): void{
+    this.cart.push(product);
   }
 
 }

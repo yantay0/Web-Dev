@@ -9,6 +9,7 @@ import {Product, products} from "../products";
 export class ProductItemComponent implements OnInit{
   @Input() product?: Product;
   @Output() remove = new EventEmitter();
+  @Output() add = new EventEmitter();
 
 
   ngOnInit() : void {

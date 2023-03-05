@@ -9,12 +9,10 @@ import {Product, products} from "../products";
 export class ShoppingCartComponent {
   items :Product[] = [];
 
-  addToCart(product: Product): void{
-    this.items.push(product);
-  }
 
   clearCart () : Product[] {
     this.items = []
     return this.items;
   }
+
 }
