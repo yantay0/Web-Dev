@@ -1,18 +1,29 @@
-import { Component } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
-import {Product, products} from '../products';
+import {Product, products as allProducts} from '../products';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
-  products = products;
+export class ProductListComponent implements OnInit{
 
+  @Input() category?: string;
+  filtered?: Product[];
 
+  ngOnInit(): void {
+    this.filtered =  this.getProductByCategory();
+  }
+  ngOnChanges(): void {
+   this.filtered = this.getProductByCategory(); // auto call by Angular when category's state is changed
+  }
+  getProductByCategory() {
+    if(this.category === "All Categories")
+      return allProducts;
+    return  allProducts.filter((x) => x.category === this.category)
+  }
   share(product: Product) {
-
     const message = encodeURIComponent(`I'm sharing with you ${product.name}\n\n ${product.link}`);
     const telegramUrl = (`https://t.me/share/url?url=${message}`);
     window.open(telegramUrl);
@@ -21,15 +32,6 @@ export class ProductListComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale')
   }
-  getProductByCategory(category: string) {
-    return this.products.filter((x) => x.category == category);
-  }
 
 }
 
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

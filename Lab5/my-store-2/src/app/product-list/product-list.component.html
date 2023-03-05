@@ -1,5 +1,5 @@
-<div class="container products">
-  <div class="container product" *ngFor="let product of products ">
+<div class="container products" *ngIf="getProductByCategory.length==0">
+  <div class="container product"*ngFor="let product of filtered">
     <div class="container image">
         <img src="{{product.image}}">
     </div>
@@ -27,4 +27,9 @@
     </div>
   </div>
 </div>
+
+<div class="emptyCategoryMsg">
+  <h1>No products found in this category</h1>
+</div>
+
 

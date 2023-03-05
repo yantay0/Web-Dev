@@ -84,7 +84,7 @@ export const products = [
   {
     "id": 12,
     "name": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-    "category" : "Electronics",
+    "category" : 'Electronics',
     "price": 114,
     "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
     "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
