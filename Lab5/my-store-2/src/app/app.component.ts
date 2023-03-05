@@ -10,12 +10,13 @@ export class AppComponent implements OnInit{
 
   categories = ['All Categories','Electronics', 'Clothing', 'Home&Garden', 'Grocery','Beauty&Health']
   _category?:string= this.categories[0];
-
+  statusCategoryClicked = false;
   title = 'my-store';
 
   setCategory(category: string): void{
     this._category = category;
     console.log(this._category)
+    this.statusCategoryClicked = true;
   }
 
   getCategory(): string

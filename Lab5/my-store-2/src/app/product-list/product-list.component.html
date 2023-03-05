@@ -1,4 +1,5 @@
-<div class="container products" *ngIf="getProductByCategory.length==0">
+<h1 class="headText">{{category}}</h1>
+<div class="container products">
   <div class="container product"*ngFor="let product of filtered">
     <div class="container image">
         <img src="{{product.image}}">
@@ -25,12 +26,13 @@
         (notify)="onNotify()">
       </app-product-alerts>
       <button class="like" (click)="increaseNumberOfLikes(product.id)">Like {{product.numberOfLikes}}</button>
+      <button class="details">Details</button>
     </div>
+  </div>
+  <div class="emptyCategoryMsg headText" *ngIf="getProductByCategory().length==0">
+    <h1>No products found in this category</h1>
   </div>
 </div>
 
-<div class="emptyCategoryMsg">
-  <h1>No products found in this category</h1>
-</div>
 
 

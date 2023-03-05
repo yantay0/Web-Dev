@@ -14,8 +14,8 @@
 
 <nav class="categories-menu">
   <ul class="menu-list">
-    <div class="category" *ngFor=" let category of categories">
-      <li (click)="setCategory(category)">
+    <div class="category" *ngFor=" let category of categories" (click)="setCategory(category)">
+      <li>
         {{category}}
       </li>
     </div>
@@ -24,6 +24,6 @@
 
 <div class="container">
 <!--  <router-outlet></router-outlet>-->
-    <app-product-list [category]="getCategory()">
+    <app-product-list  [category]="getCategory()">
     </app-product-list>
 </div>

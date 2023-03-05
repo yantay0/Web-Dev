@@ -4,8 +4,9 @@
   justify-content: center;
   align-items: center;
 }
-.emptyCategoryMsg {
-  margin: 30px;
+
+.headText {
+  margin: 40px;
 }
 
 .product {
