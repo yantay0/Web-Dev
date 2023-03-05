@@ -10,6 +10,7 @@
           {{ product.name }}
         </a>
       </h3>
+      <p>{{product.description}}</p>
       <p class="rating">
         Rating: {{product.rating}}
       </p>
@@ -26,13 +27,15 @@
         (notify)="onNotify()">
       </app-product-alerts>
       <button class="like" (click)="increaseNumberOfLikes(product.id)">Like {{product.numberOfLikes}}</button>
-      <button class="details">Details</button>
+      <button class="details">
+        <a class="details" [title]="'Details'"
+           [routerLink]="['/products', product.id]">Details
+        </a></button>
     </div>
   </div>
   <div class="emptyCategoryMsg headText" *ngIf="getProductByCategory().length==0">
     <h1>No products found in this category</h1>
   </div>
 </div>
-
 
 

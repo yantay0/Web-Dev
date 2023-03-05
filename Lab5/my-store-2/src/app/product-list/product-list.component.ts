@@ -32,6 +32,10 @@ export class ProductListComponent implements OnInit{
     window.alert('You will be notified when the product goes on sale')
   }
 
+  showDetails(id: number) {
+    // return
+  }
+
   increaseNumberOfLikes(id: number) {
     let x = allProducts.find((x) => x.id == id);
     if(x) {
