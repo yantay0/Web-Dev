@@ -1,4 +1,6 @@
 import {Component, Input} from '@angular/core';
+// import {CartService} from "../cart.service";
+import {CartComponent} from "../cart/cart.component";
 
 @Component({
   selector: 'app-top-bar',
@@ -6,7 +8,6 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-  @Input() numberOfItems : number = 0;
 
 }
 

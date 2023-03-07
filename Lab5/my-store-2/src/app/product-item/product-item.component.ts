@@ -9,18 +9,14 @@ import {Product, products} from "../products";
 export class ProductItemComponent implements OnInit{
   @Input() product?: Product;
   @Output() remove = new EventEmitter();
-  @Output() add = new EventEmitter();
 
 
   ngOnInit() : void {
 
   }
 
-  addToCart(id: number) {
-
-  }
-  removeFromCart() {
-    this.remove.emit(this.product);
+  removeItem() {
+    this.remove.emit(this.product?.id);
   }
 
 }
