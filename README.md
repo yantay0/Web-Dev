@@ -7,3 +7,5 @@ lab3 - JS basics and ToDoList using HTML & CSS & JavaScript
 lab4 - My-store SPA. Intro to Angular
 
 lab5 - My-store-2. New Feature: remove/add to cart, selection by Product Category
+
+lab6 - Albums. Usage of Route and Http modules in Angular
