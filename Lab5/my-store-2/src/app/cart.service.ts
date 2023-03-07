@@ -20,9 +20,7 @@ export class CartService {
     this.items = [];
     return this.items;
   }
-  // removeItem(id: number) {
-  //   this.items = this.items.filter((x) => x.id!==id);
-  // }
+
 
   constructor() { }
 }

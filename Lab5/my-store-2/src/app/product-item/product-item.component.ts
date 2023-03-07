@@ -16,7 +16,7 @@ export class ProductItemComponent implements OnInit{
   }
 
   removeItem() {
-    this.remove.emit(this.product?.id);
+    this.remove.emit(this.product);
   }
 
 }

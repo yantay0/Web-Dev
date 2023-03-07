@@ -28,12 +28,14 @@ img {
 .image {
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
+  height: 50%;
 }
 .buttons {
   width: 100%;
   margin: 3px;
 }
+
 
 button {
   margin: 0 10px;
@@ -46,12 +48,13 @@ button {
   font-size: 16px;
 }
 
-.add {
-  background: green;
-}
-.remove {
-  background: red;
-}
+
+/*.add {*/
+/*  background: green;*/
+/*}*/
+/*.remove {*/
+/*  background: red;*/
+/*}*/
 .like {
   /*background: aquamarine;*/
   background: #dddddd;

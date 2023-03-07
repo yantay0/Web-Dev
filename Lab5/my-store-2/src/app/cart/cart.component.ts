@@ -17,9 +17,8 @@ export class CartComponent {
     private cartService: CartService
   ) {}
 
-  removeItem(id: number) {
-    this.items = this.items.filter((x) => x.id!==id);
-    // this.cartService.removeItem(product.id);
+  removeItem(product: Product) {
+    this.items.splice(this.items.indexOf(product), 1);
   }
 
 

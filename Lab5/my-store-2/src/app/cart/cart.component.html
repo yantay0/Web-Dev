@@ -1,7 +1,7 @@
 <h3>Cart</h3>
 
 <div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.name }}m</span>
+  <span>{{ item.name }}</span>
   <span>{{ item.price | currency}}</span>
   <app-product-item [product]="item" (remove)="removeItem($event)"></app-product-item>
 </div>
