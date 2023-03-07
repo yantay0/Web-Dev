@@ -35,4 +35,8 @@ export class AlbumsService {
     return this.client.get<AlbumPhotos[]>(`${this.BASE_URL}/albums/${albumId}/photos`);
   }
 
+  updateAlbumTitle(id: number, newTitle: string): Observable<Album> {
+    return this.client.patch<Album>(`${this.BASE_URL}/albums/${id}`, { title: newTitle });
+  }
+
 }

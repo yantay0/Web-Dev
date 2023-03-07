@@ -12,8 +12,10 @@ export class AlbumDetailsComponent implements OnInit {
 
   album: Album;
   loaded: boolean;
+  newTitle: string;
   constructor(private route: ActivatedRoute, private albumService: AlbumsService) {
     this.album = {} as Album;
+    this.newTitle = {}  as string;
     this.loaded = true;
   }
 
@@ -31,4 +33,22 @@ export class AlbumDetailsComponent implements OnInit {
       this.loaded = true;
     })
   }
+
+
+  updateAlbumTitle() {
+    this.loaded = false;
+    // console.log(this.album.title)
+    this.albumService.updateAlbumTitle(this.album.id, this.newTitle).subscribe((album: Album) => {
+      console.log(this.newTitle)
+      album.title = this.newTitle
+      console.log(album.title)
+      console.log(this.album.id)
+      console.log(this.album.title)
+      this.album = album;
+      // alert(album.title.length)
+      this.loaded = true;
+      this.newTitle = '';
+    });
+  }
+
 }
