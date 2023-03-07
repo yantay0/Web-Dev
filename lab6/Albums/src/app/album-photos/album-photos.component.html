@@ -1,5 +1,7 @@
 <h2>Album Photos</h2>
-
+<a routerLink="/albums/{{albumPhotos[0].albumId}}">
+  <button>Return back</button>
+</a>
 <main>
   <div *ngFor="let photo of albumPhotos">
      <p>{{photo.title}}</p>

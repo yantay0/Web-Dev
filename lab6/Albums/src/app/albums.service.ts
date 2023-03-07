@@ -19,7 +19,7 @@ export class AlbumsService {
     return this.client.get<Album[]>(`${this.BASE_URL}/albums`)
   }
 
-  getPost(id: number): Observable<Album> {
+  getAlbum(id: number): Observable<Album> {
     return this.client.get<Album>(`${this.BASE_URL}/albums/${id}`)
   }
 

@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Album, AlbumPhotos} from "../modeles";
 import {ActivatedRoute} from "@angular/router";
 import {AlbumsService} from "../albums.service";
+import {AlbumsComponent} from "../albums/albums.component";
 
 @Component({
   selector: 'app-album-photos',
@@ -9,13 +10,13 @@ import {AlbumsService} from "../albums.service";
   styleUrls: ['./album-photos.component.css']
 })
 export class AlbumPhotosComponent implements OnInit{
-  albumId: number;
+
   albumPhotos: AlbumPhotos[];
   loaded: boolean;
 
+
   constructor(private route: ActivatedRoute, private albumService: AlbumsService) {
     this.albumPhotos = [];
-    this.albumId = {} as number;
     this.loaded = true;
   }
 
@@ -29,8 +30,6 @@ export class AlbumPhotosComponent implements OnInit{
       this.loaded = false;
       this.albumService.getAlbumPhotos(albumId).subscribe((albumPhotos) => {
         this.albumPhotos = albumPhotos;
-        console.log("smsm")
-        // (albumPhotos.forEach((x)=> console.log(x)));
       })
       this.loaded = true;
     })

@@ -1,9 +1,13 @@
 
 <div  *ngIf="loaded">
   <h3>Album Detail #{{album.id}}</h3>
+
   <p>{{album.title}}</p>
   <a routerLink="/albums/{{album.id}}/photos">Photos</a>
 </div>
 
 <h3 *ngIf="!loaded">loading...</h3>
 
+<a routerLink="/albums/">
+  <button>Return back</button>
+</a>
