@@ -1,33 +1,30 @@
 <app-top-bar></app-top-bar>
-
-<!--<nav class="container categories">-->
-<!--  <div class="container content">-->
-<!--    <ul class="list">-->
-<!--      <li class="category">All Categories</li>-->
-<!--      <li class="category" *ngFor="let category of categories">-->
-<!--              {{category}}-->
-<!--            </li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--</nav>-->
-
-
 <nav class="categories-menu">
   <ul class="menu-list">
-    <div class="category" *ngFor=" let category of categories" (click)="setCategory(category)">
-      <li>
-        {{category}}
-      </li>
+    <div class="category" *ngFor=" let category of categories">
+      <a
+        [routerLink]="['', category]">
+        <li>
+          {{category}}
+        </li>
+      </a>
     </div>
   </ul>
 </nav>
 
+<!--<main>-->
+<!--  <div class="categories" *ngFor="let category of categories">-->
+<!--    <div class="category box">-->
+<!--      <a [routerLink]="['', category]">-->
+<!--        <div>-->
+<!--          <img src="https://resources.cdn-kaspi.kz/shop/static/main-nav/d9057c79-2b13-4bf7-ab6a-3458d3cf31ea-Grocery.png">-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</main>-->
 
+<router-outlet></router-outlet>
 
-<div class="container">
-    <app-product-list  [category]="getCategory()">
-    </app-product-list>
-<!--  <router-outlet></router-outlet>-->
-</div>
 
 

@@ -10,15 +10,14 @@ import {ActivatedRoute} from "@angular/router";
 export class ProductDetailsComponent implements OnInit{
 
   product: Product | undefined;
-
-  constructor(private route: ActivatedRoute) {
-  }
+  category?: String;
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     // First get the product id from the current route.
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
-    // Find the product that correspond with the id provided in route.
+    const category = String(routeParams.get('category'))
     this.product = products.find(product => product.id === productIdFromRoute);
   }
 }

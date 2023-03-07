@@ -10,7 +10,7 @@
           {{ product.name }}
         </a>
       </h3>
-      <p>{{product.description}}</p>
+<!--      <p>{{product.description}}</p>-->
       <p class="rating">
         Rating: {{product.rating}}
       </p>
@@ -40,7 +40,7 @@
         </a></button>
     </div>
   </div>
-  <div class="emptyCategoryMsg headText" *ngIf="getProductByCategory().length==0">
+  <div class="emptyCategoryMsg headText" *ngIf="filtered.length==0">
     <h1>No products found in this category</h1>
   </div>
 </div>

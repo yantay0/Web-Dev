@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 import {Product, products, products as allProducts} from '../products';
+import {ActivatedRoute} from "@angular/router";
+import {filter} from "rxjs";
 
 @Component({
   selector: 'app-product-list',
@@ -9,14 +11,25 @@ import {Product, products, products as allProducts} from '../products';
 })
 export class ProductListComponent implements OnInit{
 
-  @Input() category?: string;
-  filtered?: Product[];
+  category?: string;
+  filtered: Product[] = allProducts;
 
+  constructor(private route: ActivatedRoute) {}
   ngOnInit(): void {
-    this.filtered =  this.getProductByCategory();
-  }
+      const routeParams = this.route.snapshot.paramMap;
+      const categoryFromRoute = String(routeParams.get('category'));
+      if(categoryFromRoute === 'All Categories'){
+        console.log("s"+categoryFromRoute)
+        return;
+      }
+      this.filtered = allProducts.filter((x) => x.category === categoryFromRoute);
+    }
   ngOnChanges(): void {
    this.filtered = this.getProductByCategory(); // auto call by Angular when category's state is changed
+    const routeParams = this.route.snapshot.paramMap;
+    const categoryFromRoute = String(routeParams.get('category'));
+    console.log(`1${categoryFromRoute}1`)
+    this.filtered = allProducts.filter((x) => x.category === categoryFromRoute);
   }
   getProductByCategory() {
     if(this.category === "All Categories")
@@ -32,9 +45,6 @@ export class ProductListComponent implements OnInit{
     window.alert('You will be notified when the product goes on sale')
   }
 
-  showDetails(id: number) {
-    // return
-  }
 
   increaseNumberOfLikes(id: number) {
     let x = allProducts.find((x) => x.id == id);
@@ -42,6 +52,7 @@ export class ProductListComponent implements OnInit{
       x.numberOfLikes++;
     }
   }
+
 
 }
 
