@@ -3,10 +3,12 @@
   <input type="text" [(ngModel)]="newAlbum.title">
   <button (click)="addAlbum()">Add post</button>
 </fieldset>
+
 <div *ngIf="loaded">
   <ul>
     <li *ngFor="let album of albums">
       <a routerLink="/albums/{{album.id}}">{{album.id}} {{album.title}}</a>
+      <button (click)="deleteAlbum(album.id)">delete</button>
     </li>
   </ul>
 </div>

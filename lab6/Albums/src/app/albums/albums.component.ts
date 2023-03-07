@@ -7,10 +7,11 @@ import {AlbumsService} from "../albums.service";
   templateUrl: './albums.component.html',
   styleUrls: ['./albums.component.css']
 })
-export class AlbumsComponent implements OnInit{
+export class AlbumsComponent implements OnInit {
   albums: Album[];
   newAlbum: Album;
   loaded: boolean;
+
   constructor(private albumsService: AlbumsService) {
     this.albums = [];
     this.newAlbum = {} as Album;
@@ -18,18 +19,36 @@ export class AlbumsComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.getPosts();
+    this.getAlbums();
   }
 
-  getPosts() {
+  getAlbums() {
     this.loaded = false;
     this.albumsService.getAlbums().subscribe((albums) => {
       this.albums = albums;
     })
     this.loaded = true;
   }
+
   addAlbum() {
-    console.log(this.newAlbum);
+    if (!this.newAlbum || !this.newAlbum.title || this.newAlbum.title.length === 0) {
+      alert("cannot add empty album");
+      return;
+    }
+    this.loaded = false;
+    this.albumsService.addAlbum(this.newAlbum).subscribe((album: Album) => {
+      this.albums.unshift(album);
+      this.loaded = true;
+      this.newAlbum = {} as Album;
+    });
+  }
+
+  deleteAlbum(id: number) {
+    this.loaded = false;
+    this.albumsService.deleteAlbum(id).subscribe((album: Album) => {
+      this.getAlbums();
+    })
   }
 
 }
+
