@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {catchError, Observable, throwError} from "rxjs";
 import {Album, AlbumPhotos} from "./modeles";
 
 @Injectable({
@@ -11,9 +11,7 @@ export class AlbumsService {
 
   BASE_URL: string = 'https://jsonplaceholder.typicode.com';
 
-  constructor(private client: HttpClient) {
-    // this.BASE_URL = 'https://jsonplaceholder.typicode.com';
-  }
+  constructor(private client: HttpClient) {}
 
   getAlbums(): Observable<Album[]> {
     return this.client.get<Album[]>(`${this.BASE_URL}/albums`)
@@ -35,8 +33,9 @@ export class AlbumsService {
     return this.client.get<AlbumPhotos[]>(`${this.BASE_URL}/albums/${albumId}/photos`);
   }
 
-  updateAlbumTitle(id: number, newTitle: string): Observable<Album> {
-    return this.client.patch<Album>(`${this.BASE_URL}/albums/${id}`, { title: newTitle });
+  patchAlbumTitle(id: number, newTitle: string): Observable<Album> {
+    return this.client.put<Album>(`${this.BASE_URL}/albums/${id}`, { title: newTitle })
   }
+
 
 }

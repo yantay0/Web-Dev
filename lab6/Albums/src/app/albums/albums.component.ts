@@ -46,7 +46,9 @@ export class AlbumsComponent implements OnInit {
   deleteAlbum(id: number) {
     this.loaded = false;
     this.albumsService.deleteAlbum(id).subscribe((album: Album) => {
-      this.getAlbums();
+      // this.getAlbums();
+      this.albums = this.albums.filter((x) => x.id!==id);
+      this.loaded = true;
     })
   }
 

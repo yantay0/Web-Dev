@@ -15,7 +15,7 @@ export class AlbumDetailsComponent implements OnInit {
   newTitle: string;
   constructor(private route: ActivatedRoute, private albumService: AlbumsService) {
     this.album = {} as Album;
-    this.newTitle = {}  as string;
+    this.newTitle = "";
     this.loaded = true;
   }
 
@@ -36,19 +36,18 @@ export class AlbumDetailsComponent implements OnInit {
 
 
   updateAlbumTitle() {
+    if (!this.newTitle || this.newTitle.length === 0) {
+      alert("cannot assign  empty title");
+      return;
+    }
     this.loaded = false;
-    // console.log(this.album.title)
-    this.albumService.updateAlbumTitle(this.album.id, this.newTitle).subscribe((album: Album) => {
-      console.log(this.newTitle)
-      album.title = this.newTitle
-      console.log(album.title)
-      console.log(this.album.id)
-      console.log(this.album.title)
-      this.album = album;
-      // alert(album.title.length)
-      this.loaded = true;
-      this.newTitle = '';
-    });
+      this.albumService.patchAlbumTitle(this.album.id, this.newTitle).subscribe(
+        (album) => {
+          this.album.title =album.title;
+          this.loaded = true;
+          this.newTitle = "";
+  })
+
   }
 
 }

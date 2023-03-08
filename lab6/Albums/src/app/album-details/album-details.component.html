@@ -6,10 +6,8 @@
   <a routerLink="/albums/{{album.id}}/photos">Photos</a>
 </div>
 <fieldset>
-<!--  <div>-->
     <label>Title:</label>
-    <input type="text" placeholder="new Album's title" [ngModel]="newTitle">
-<!--  </div>-->
+    <input type="text" placeholder="new Album's title" [(ngModel)]="newTitle">
   <button type="submit" (click)="updateAlbumTitle()">Save Changes</button>
 </fieldset>
 
