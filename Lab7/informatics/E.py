@@ -1,4 +1,5 @@
 v = int(input())
 t = int(input())
-ans = (v * t) % 109
+ROAD_LENGTH = 109;
+ans = (v * t) % ROAD_LENGTH
 print(ans)
