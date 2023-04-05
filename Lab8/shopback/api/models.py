@@ -21,15 +21,20 @@ class Category(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=255)
     price = models.FloatField(default=0)
-    # category = models.ForeignKey(Category, on_delete=models.CASCADE(), related_name='products')
+    category = models.ForeignKey(Category,
+                                 on_delete=models.CASCADE, related_name='products', null=True, default=None)
 
     class Meta:
         verbose_name = 'Product'
         verbose_name_plural = 'Products'
 
-    def __str__(self):
+    def to_json(self):
         return {
             'id': self.id,
             'name': self.name,
-            'price': self.price
+            'price': self.price,
+            'category': self.category.to_json()
         }
+
+    def __str__(self):
+        return f'{self.id}: {self.name}'
