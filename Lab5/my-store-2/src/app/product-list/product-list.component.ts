@@ -19,22 +19,15 @@ export class ProductListComponent implements OnInit{
       const routeParams = this.route.snapshot.paramMap;
       const categoryFromRoute = String(routeParams.get('category'));
       if(categoryFromRoute === 'All Categories'){
-        console.log("s"+categoryFromRoute)
         return;
       }
       this.filtered = allProducts.filter((x) => x.category === categoryFromRoute);
     }
   ngOnChanges(): void {
-   this.filtered = this.getProductByCategory(); // auto call by Angular when category's state is changed
     const routeParams = this.route.snapshot.paramMap;
     const categoryFromRoute = String(routeParams.get('category'));
-    console.log(`1${categoryFromRoute}1`)
+    this.category = categoryFromRoute
     this.filtered = allProducts.filter((x) => x.category === categoryFromRoute);
-  }
-  getProductByCategory() {
-    if(this.category === "All Categories")
-      return allProducts;
-    return  allProducts.filter((x) => x.category === this.category)
   }
   share(product: Product) {
     const message = encodeURIComponent(`I'm sharing with you ${product.name}\n\n ${product.link}`);

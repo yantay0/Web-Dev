@@ -10,19 +10,10 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
+import {AppRoutingModule} from "./app-routing.module";
 // import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-      {path: 'cart', component: CartComponent},
-      {path: '', redirectTo: '/All Categories', pathMatch: 'full'},
-      {path: ':category', component: ProductListComponent},
-      {path: 'products/:productId', component: ProductDetailsComponent },
-    ])
-  ],
   declarations: [
     AppComponent,
     TopBarComponent,
@@ -31,6 +22,11 @@ import { CartComponent } from './cart/cart.component';
     ProductItemComponent,
     ProductDetailsComponent,
     CartComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
   ],
   bootstrap: [
     AppComponent

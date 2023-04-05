@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a159c276-4521-478b-9f6c-d8c59e086d93" name="Changes" comment="" />
+    <list default="true" id="a159c276-4521-478b-9f6c-d8c59e086d93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Lab3/ToDo app/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab3/ToDo app/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/.angular/cache/15.1.6/angular-webpack/dd197898edcec1b185dabf90df99f5a26205caf9/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/my-store-2/src/app/product-list/product-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/Albums/src/app/album-details/album-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/Albums/src/app/album-details/album-details.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Madina/Desktop/kbtu/Web Dev/Lab4/my-store",
+    "last_opened_file_path": "C:/Users/Madina/Desktop/kbtu/Web Dev/Lab5/my-store-2",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -60,6 +84,7 @@
       <workItem from="1676976150099" duration="12371000" />
       <workItem from="1677069128272" duration="916000" />
       <workItem from="1677072578794" duration="326000" />
+      <workItem from="1678338129209" duration="1202000" />
     </task>
     <servers />
   </component>

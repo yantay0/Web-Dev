@@ -8,10 +8,13 @@ todoList.addEventListener("click", deleteCheck);
 
 function addTodo(event) {
     event.preventDefault();
+    // console.log(todoInput.va)
+    // if(todoInput.value!=""){
+    if(todoInput.value=="") return
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
     const newTodo = document.createElement("li");
-    newTodo.innerText = todoInput.value; 
+          newTodo.innerText = todoInput.value; 
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
     const completedButton = document.createElement("button");
@@ -23,7 +26,11 @@ function addTodo(event) {
     trashButton.innerHTML = '<i class="fas fa-trash"></li>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
-    
+
+    // }
+    // else {
+    //     alert("Empty");
+    // }
     todoList.appendChild(todoDiv);
     todoInput.value = "";
 }
