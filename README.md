@@ -10,6 +10,6 @@ lab5 - My-store-2. New Features: remove/add to cart, selection by Product Catego
 
 lab6 - Albums. Usage of Route and Http modules in Angular
 
-lab7 - set up enviroments & set up admin panel using Django
+lab7 - set up enviroment &  admin panel using Django
 
 lab8 - create API for online shop 
