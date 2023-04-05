@@ -36,6 +36,9 @@ class Product(models.Model):
             'id': self.id,
             'name': self.name,
             'price': self.price,
+            'description': self.description,
+            'count': self.count,
+            'is_active': self.is_active,
             'category': self.category.to_json()
         }
 
