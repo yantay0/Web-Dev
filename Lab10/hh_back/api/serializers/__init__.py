@@ -1,0 +1,2 @@
+from .company_serializer import CompanySerializer1, CompanySerializer2
+from .vacancy_serializer import VacancySerializer1
