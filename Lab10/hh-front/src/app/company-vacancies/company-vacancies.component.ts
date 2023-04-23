@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, ParamMap} from "@angular/router";
 import {Company, Vacancy} from "../models";
 import {CompanyService} from "../company.service";
-import { ParamMap } from '@angular/router';
+
 @Component({
   selector: 'app-company-vacancies',
   templateUrl: './company-vacancies.component.html',

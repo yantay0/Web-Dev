@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Company} from "../models";
 import {CompanyService} from "../company.service";
 
@@ -11,6 +11,7 @@ export class CompanyComponent {
 
 
   companies: Company[] = []
+  // newCompany: string = '';
   newCompany: Company;
 
   constructor(private companyService: CompanyService) {
@@ -19,11 +20,20 @@ export class CompanyComponent {
 
   ngOnInit(): void {
     this.companyService.getCompanies().subscribe((data: Company[])=>{
+      // console.log(data)
       this.companies = data;
     })
+    // this.companies.push(
+    //   {id:1, name: 'Kolesa'},
+    //   {id:2, name: 'Kaspi'},
+    //   {id:3, name: 'Koko'}
+    // )
   }
 
   addCompany() {
+    // if (!this.newCompany.city) {
+    //   this.newCompany.city = null;
+    // }
     this.companyService.createCompany(this.newCompany).subscribe((data: Company)=>{
       this.companies.push(data);
       this.newCompany = {} as Company
